@@ -5,6 +5,15 @@
     <router-link to="/about" class="router">文章</router-link>
     <router-link to="/about" class="router">專案分享</router-link>
   </nav>
+  <div class="content">
+      <div class="menu">
+        <h2>Github</h2>
+      </div>
+      <div class="main">
+        <router-view/>
+      </div>
+  </div>
+
 </div>
 </template>
 
@@ -31,5 +40,13 @@ nav{
 .router:hover{
  background-color:rgb(212, 208, 208);
  border-radius:10%;
+}
+.menu{
+  width:200px;
+  height:100vh;
+  background-color:rgb(216, 210, 210);
+}
+.content{
+  display: flex;
 }
 </style>

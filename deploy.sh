@@ -2,7 +2,6 @@
 
 # 当发生错误时中止脚本
 set -e
-git push -f https://github.com/Ariel19971024/Ariel_Frontend.git master:develop
 # 构建
 npm run build
 
