@@ -7,7 +7,7 @@
   </nav>
   <div class="content">
       <div class="menu">
-        <h2>Github</h2>
+        <div class="menu-topic-1">Github</div>
       </div>
       <div class="main">
         <router-view/>
@@ -48,5 +48,10 @@ nav{
 }
 .content{
   display: flex;
+}
+.menu-topic-1{
+  font-size: 20px;
+  padding:15px;
+  cursor: pointer;
 }
 </style>
