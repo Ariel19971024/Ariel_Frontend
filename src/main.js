@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+// component
+import Menu from './components/menu.vue'
+app.component('Menu', Menu)
+app.use(router).mount('#app')
