@@ -21,7 +21,7 @@
     border-radius: 10%;
   }
   .menu {
-    width: 200px;
+    min-width:200px;
     height: 100vh;
     background-color: rgb(216, 210, 210);
   }

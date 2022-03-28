@@ -6,13 +6,22 @@
       <router-link to="/about" class="router">專案分享</router-link>
     </nav>
     <div class="content">
-      <Menu />
+      <div class="menu">
+        <Menu/>
+      </div>
       <div class="main">
         <router-view />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "app",
+  components: {},
+};
+</script>
 
 <style>
 @import "./css/layout.css";
