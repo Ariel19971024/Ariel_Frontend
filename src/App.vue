@@ -1,17 +1,13 @@
 <template>
   <div class="container">
-    <!-- <nav>
-      <div class="nav-inner">
-      <span class="material-icons" @click="toggleMenu = !toggleMenu"
-        >reorder</span
-      >
-      <span class="logo">ARIEL'S GOODNOTE</span>
-      <router-link to="/" class="router">關於</router-link>
-      <router-link to="/about" class="router">文章</router-link>
-      <router-link to="/about" class="router">專案分享</router-link>
+    <div class="aside" v-if="toggleMenu" :class="{'aside-transition':toggleMenu}">
+      <div class="search-area">
+        <input type="text" placeholder="search">
       </div>
-    </nav> -->
-    <nav>
+        <Menu />
+    </div>
+    <div class="right-block">
+      <nav>
       <div class="nav-inner">
         <div class="nav-item nav-btn">
           <span class="material-icons" @click="toggleMenu = !toggleMenu"
@@ -22,19 +18,17 @@
         </div>
         <div class="nav-item nav-menu">
           <ul>
-            <li><router-link to="/" class="router">關於</router-link></li>
-            <li><router-link to="/about" class="router">文章</router-link></li>
-            <li><router-link to="/about" class="router">專案分享</router-link></li>
+            <li><router-link to="/" class="router" @click="toggleMenu = false">關於</router-link></li>
+            <li><div class="router" @click="toggleMenu = true">文章</div></li>
+            <li><div  class="router">專案分享</div></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="content">
-      <div class="aside">
-        <Menu v-if="toggleMenu" />
-      </div>
-      <div class="main">
-        <router-view />
+        <div class="main">
+          <router-view />
+        </div>
       </div>
     </div>
   </div>

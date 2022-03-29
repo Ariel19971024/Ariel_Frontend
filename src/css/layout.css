@@ -8,7 +8,14 @@ nav {
   background-color: rgb(246, 244, 244);
   
 }
+.container{
+  display: flex;
 
+}
+.right-block{
+  flex-grow: 1;
+  /* 剩餘空白平均分配 */
+}
 .nav-inner {
   padding: 20px;
   display: flex;
@@ -65,10 +72,25 @@ nav {
   height: 100vh;
   background-color: #f9f9f9;
 }
+.search-area{
+  width: 100%;
+}
+.search-area input{
+  width: 98%;
+  font-size: 20px;
+  height:40px;
+  outline-color: #aaa;
+}
 .menu-topic-1 {
   font-size: 20px;
   padding: 15px;
   cursor: pointer;
+}
+.nav-logo{
+  margin-left: 15px;
+}
+.nav-menu{
+ margin-left: auto;
 }
 /* 頁面 */
 .topic {
