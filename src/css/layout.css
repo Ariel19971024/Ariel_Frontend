@@ -6,13 +6,11 @@ nav {
   width: 100%;
   /* padding: 20px; */
   background-color: rgb(246, 244, 244);
-  
 }
-.container{
+.container {
   display: flex;
-
 }
-.right-block{
+.right-block {
   flex-grow: 1;
   /* 剩餘空白平均分配 */
 }
@@ -45,17 +43,22 @@ nav {
   background-color: rgb(212, 208, 208);
   border-radius: 10%;
 }
-.logo{
+.logo {
   display: block;
-  margin-left:10px;
-  font-family: 'Tangerine', serif;
+  margin-left: 10px;
+  font-family: "Tangerine", serif;
   font-size: 30px;
   text-shadow: 4px 4px 4px #aaa;
 }
 /* 筆記區 */
 .main {
   width: 100%;
+  max-width: 1099px;
   padding: 0px 40px;
+  margin: 0 auto;
+  border: #eee solid 1px;
+  border-bottom: none;
+  border-top: none;
 }
 .content-area {
   /* width: 800px; */
@@ -72,25 +75,35 @@ nav {
   height: 100vh;
   background-color: #f9f9f9;
 }
-.search-area{
+.search-area {
   width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.search-area input{
-  width: 98%;
-  font-size: 20px;
-  height:40px;
-  outline-color: #aaa;
+.search-area input {
+  width: 80%;
+  font-size: 15px;
+  height: 40px;
+  outline-color: rgb(202, 199, 199);
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 20px;
+  padding:0px 10px;
+}
+.search-area input::placeholder{
+  color: rgb(221, 221, 221);
 }
 .menu-topic-1 {
   font-size: 20px;
   padding: 15px;
   cursor: pointer;
 }
-.nav-logo{
+.nav-logo {
   margin-left: 15px;
 }
-.nav-menu{
- margin-left: auto;
+.nav-menu {
+  margin-left: auto;
 }
 /* 頁面 */
 .topic {
@@ -102,7 +115,29 @@ nav {
   /* width:100%; */
   border-bottom: rgb(219, 218, 218) 1px solid;
 }
-.date{
-  color:rgb(206, 203, 203);
+.paragraph-sub{
+  margin-top:20px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.introduce{
+  margin-bottom: 10px;
+}
+.paragraph-2{
+  padding: 20px 0;
+}
+.sub-1{
+  display: flex;
+  /* border-left: 10px solid rgb(158, 174, 226); */
+}
+.decorate{
+   margin-right: 30px;
+   border-left: 10px solid rgb(180, 195, 245);
+}
+.article-area{
+  padding: 20px 0;
+  font-size: 20px;
+}
+.date {
+  color: rgb(206, 203, 203);
   padding: 0 3px;
 }

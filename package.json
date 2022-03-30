@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "clipboard": "^2.0.10",
     "core-js": "^3.6.5",
     "element-plus": "^2.1.6",
     "element-ui": "^2.15.6",
