@@ -42,6 +42,21 @@
           />
         </div>
       </div>
+          <input type="text" v-model="link">
+          <button v-clipboard:copy="link" v-clipboard:success="success">click</button>
     </div>
   </div>
 </template>
+<script>
+export default {
+data(){
+  return{
+    link:"https://google.com"
+  }
+},methods:{
+  success(){
+    console.log("hi")
+  }
+}
+}
+</script>
